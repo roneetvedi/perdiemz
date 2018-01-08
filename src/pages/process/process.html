@@ -1,0 +1,180 @@
+<ion-header class="header-bg" align-title="center" >
+
+
+
+
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <button  class="backbtn" (click)="backtosigin()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon></button>
+        </ion-col>
+        <ion-col col-10>
+          <ion-title><h6>Process</h6></ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+      
+    
+      
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="prfl">
+    <ion-list class="processdtl">
+
+ <ion-grid no-padding class="listgrid">
+   <ion-row>
+     <ion-col col-12 no-padding><h3>Basic Information:</h3></ion-col>
+</ion-row>
+      
+           <ion-row>
+              <ion-col col-12 no-padding>    
+                  <div class="prcsbx">
+                  <!-- <label></label> -->
+                  <ion-item class="slct">
+                    <ion-label>Status</ion-label>
+                    <ion-select >
+                      <ion-option>Bacon</ion-option>
+                      <ion-option>Black Olives</ion-option>
+                      <ion-option>Extra Cheese</ion-option>
+                      <ion-option>Mushrooms</ion-option>
+                      <ion-option>Pepperoni</ion-option>
+                      <ion-option>Sausage</ion-option>
+                    </ion-select>
+                  </ion-item>
+                </div>
+                  </ion-col></ion-row>
+                  <ion-row>
+           <ion-col col-12 no-padding>    
+              <div class="prcsbx">
+                  <label>Description:</label>        
+              <ion-item>
+              
+                <ion-input type="text" value=""></ion-input>
+            </ion-item></div></ion-col></ion-row>
+                <!-- </ion-list> -->
+       </ion-grid>
+
+
+       <ion-grid no-padding class="listgrid">
+          <ion-row>
+            <ion-col col-12 no-padding><h3>I am Available:</h3></ion-col>
+       </ion-row>
+             
+                  <ion-row>
+                     <ion-col col-12 no-padding>    
+                         <div class="prcsbx">
+                           <ion-grid no-padding>
+                             <ion-row>
+                               <ion-col col-2>
+                                  <label (click)="calndr()">Days:</label>
+                                </ion-col>
+                                <ion-col col-5>
+                                    <ion-item>
+                                        
+   <ion-label>From</ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY"></ion-datetime>
+                                      </ion-item>
+                                  </ion-col> 
+                                  <ion-col col-5>
+                                      <ion-item>
+        <ion-label>End</ion-label>
+   <ion-datetime displayFormat="MM/DD/YYYY" ></ion-datetime>
+                                        </ion-item>
+                                    </ion-col> 
+                              </ion-row>
+                            </ion-grid>
+                                    
+                            </div>
+                         </ion-col></ion-row>
+                         <ion-row>
+                  <ion-col col-12 no-padding>    
+                     <div class="prcsbx">
+                        <ion-grid no-padding>
+                            <ion-row>
+                              <ion-col col-2>
+                                 <label>Timing:</label>
+                               </ion-col>
+                               <ion-col col-5>
+                                   <ion-item>
+                                      <ion-label>From</ion-label>
+                                      <ion-datetime displayFormat="HH:mm:ss"></ion-datetime>
+                                     </ion-item>
+                                 </ion-col> 
+                                 <ion-col col-5>
+                                     <ion-item>
+                                         
+                                        <ion-label>End</ion-label>
+                                        <ion-datetime displayFormat="HH:mm:ss"></ion-datetime>
+                                       </ion-item>
+                                   </ion-col> 
+                             </ion-row>
+                           </ion-grid>
+                    </div></ion-col></ion-row>
+                       <!-- </ion-list> -->
+              </ion-grid>
+</ion-list>
+
+
+ <ion-grid >
+   <ion-row>
+     <ion-col col-12>
+       <h1>Gallery:</h1>
+       <ion-slides>
+         <ion-slide>
+           <ion-grid>
+             <ion-row>
+               <ion-col col-4>
+                  <div class="acheivmnt">
+                      <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                    </div>
+               </ion-col>
+               <ion-col col-4>
+                  <div class="acheivmnt">
+                      <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                    </div>
+               </ion-col>
+               <ion-col col-4>
+                  <div class="acheivmnt">
+                      <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                    </div>
+               </ion-col>
+             </ion-row>
+           </ion-grid></ion-slide>
+
+        <ion-slide>
+            <ion-grid>
+                <ion-row>
+                  <ion-col col-4>
+                      <div class="acheivmnt">
+                          <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                        </div>
+                  </ion-col>
+                  <ion-col col-4>
+                      <div class="acheivmnt">
+                          <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                        </div>
+                  </ion-col>
+                  <ion-col col-4>
+                      <div class="acheivmnt">
+                          <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                        </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+        </ion-slide>
+       </ion-slides>
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+ <ion-grid>
+   <ion-row>
+
+     <ion-col col-12>     <div class="updtbtn"><button (click)="gotolist()" ion-button full color="blue" class="btnblu">Submit</button></div></ion-col>
+   </ion-row>
+ </ion-grid>
+ 
+</ion-content>

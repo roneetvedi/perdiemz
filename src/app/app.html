@@ -1,0 +1,93 @@
+<ion-menu [content]="content">
+  <!-- <ion-header>
+    <ion-toolbar>
+
+      <ion-title>Dr. Mary Alvarez</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <ion-content>
+    <ion-grid class="side-menudoc">
+      <ion-row>
+        <ion-col col-3>
+<div class="dr-image">
+  <img class="dr-img" src="assets/imgs/image.png">
+</div>
+        </ion-col>
+        <ion-col col-9>
+          <h2>Dr. Mary Alvarez</h2>
+          <h3>mary@gmail.com</h3>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <!-- <ion-list class="side-menubar">
+
+    <button ion-item (click)="onLoad(Homepage)">
+      <img class="hm" src="assets/imgs/home.png">
+      Home
+    </button> -->
+
+
+
+    <!-- <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      {{p.title}}
+    </button> -->
+
+
+   
+      <ion-list class="side-menubar">
+         
+         
+        <!-- <ion-item class="item-icon-left" menu-close (click)="home()">
+         
+          <img class="hm" src="assets/imgs/home.png">
+           Home
+        </ion-item> -->
+        <!-- <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)"> -->
+        <ion-item class="item-icon-left" menu-close  (click)="list()">
+          <span class="img-menu"><img class="hm" src="assets/imgs/home.png"></span>Home
+        </ion-item>
+<!-- </button> -->
+        <ion-item class="item-icon-left" menu-close  (click)="notification()">
+          <span class="img-menu"><img class="hm" src="assets/imgs/notifctn.png"> </span>Notification
+        </ion-item>
+
+        <ion-item class="item-icon-left" menu-close  (click)="fav()">
+          <span class="img-menu"> <img class="hm" src="assets/imgs/hrt.png"> </span>Favourite
+        </ion-item>
+
+        <ion-item class="item-icon-left" menu-close  (click)="code()">
+          <span class="img-menu"> <img class="hm" src="assets/imgs/share.png"></span> Share this App
+        </ion-item>
+
+        <ion-item class="item-icon-left" menu-close (click)="edit()">
+          <span class="img-menu"> <img class="hm" src="assets/imgs/edit.png"></span> Edit profile
+        </ion-item>
+
+        <ion-item class="item-icon-left" menu-close  (click)="forget()">
+          <span class="img-menu"> <img class="hm" src="assets/imgs/password.png"> </span>Forget Password
+        </ion-item>
+
+        <ion-item class="item-icon-left" menu-close (click)="exit()">
+          <span class="img-menu"> <img class="hm" src="assets/imgs/exit.png"></span> Logout
+        </ion-item> 
+
+    </ion-list>
+    <div style="width:100%; height:121px;"></div>
+    
+        <ion-grid (click)="gotoprofile()" no-padding >
+            <ion-row class="sidemenu-txt">
+              <ion-col col-10>  
+                  <a href="#"> <h6>Dr. Mary Alvarez</h6></a></ion-col>
+      <ion-col col-2>
+          <ion-icon class="lefty" name="arrow-round-forward"></ion-icon>
+      </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

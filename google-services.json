@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "916203822978",
+    "project_id": "firebase-perdiemz"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916203822978:android:e69f84b41626f5a7",
+        "android_client_info": {
+          "package_name": "com.perdiemz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916203822978-574f8e7dma0r76gt859utbbq2m06ncrp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.perdiemz",
+            "certificate_hash": "9e49a85b92709b75efa8110fa67ccf687b5d3e8c"
+          }
+        },
+        {
+          "client_id": "916203822978-tiakdda3oojg7qr0dtk9cuek073ds7f8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV3_qtQI09lVgPm-rEOKFGF5yfjS--l5k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

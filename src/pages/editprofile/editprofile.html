@@ -1,0 +1,214 @@
+<ion-header class="header-bg" >
+
+
+
+
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <button  class="backbtn" (click)="backtoprofile()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon></button>
+        </ion-col>
+        <ion-col col-10>
+          <ion-title><h6>Edit Profile</h6></ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+      
+    
+<!--       
+    </ion-toolbar>
+
+  <ion-toolbar class="sub-imgs"> -->
+<ion-grid class="profile-txt">
+  <ion-row>
+    <ion-col col-12>
+      <div class="prflbox">
+      <div class="profile-img">
+        <img class="pic" src="assets/imgs/splashbanner.jpg"></div>
+        <div class="icn-pls"> <ion-icon name="add-circle"></ion-icon></div>
+        </div>
+
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-12>
+      <h2>Dr. Mary Alvarez</h2>
+      <h6>Child Specialist  |  Lakeland, LA</h6>
+   
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-header no-border>
+    <ion-toolbar>
+      <button ion-button menuToggle left>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Header</ion-title>
+      <button ion-button menuToggle right>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-toolbar>
+  </ion-header> -->
+
+<ion-content class="prfl">
+    <ion-list>
+ <ion-grid class="listgrid">
+   <ion-row>
+     <ion-col col-12 no-padding>
+       <div class="prfl-detl">
+         <ion-grid>
+           <ion-row>
+           <ion-col col-1>
+             <img class="dtl" src="assets/imgs/edctn.png">
+           </ion-col>
+           <ion-col col-11>
+             <label>Education :</label>
+           </ion-col>
+          </ion-row>
+         </ion-grid>
+        
+            
+              <ion-item>
+                
+                <ion-input type="text" value=""></ion-input>
+            </ion-item>
+                <!-- </ion-list> -->
+       </div>
+
+       <div class="prfl-detl">
+        <ion-grid>
+          <ion-row>
+          <ion-col col-1>
+            <img class="dtl" src="assets/imgs/exprnce.png">
+          </ion-col>
+          <ion-col col-11>
+             <label>Experience :</label>
+          </ion-col>
+         </ion-row>
+        </ion-grid>
+        <ion-item>
+            
+            <ion-input type="text" value=""></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="prfl-detl">
+        <ion-grid>
+          <ion-row>
+          <ion-col col-1>
+            <img class="dtl" src="assets/imgs/mdl.png">
+          </ion-col>
+          <ion-col col-11>
+              <label>Awards and Recognitions :</label>
+          </ion-col>
+         </ion-row>
+        </ion-grid>
+        <ion-item>
+            
+            <ion-input type="text" value=""></ion-input>
+        </ion-item>
+      </div>
+
+      <div class="prfl-detl">
+          <ion-grid>
+            <ion-row>
+            <ion-col col-1>
+              <img class="dtl" src="assets/imgs/charge.png">
+            </ion-col>
+            <ion-col col-11>
+                <label>Charges :</label>
+            </ion-col>
+           </ion-row>
+          </ion-grid>
+          <ion-item>
+              
+              <ion-input type="text" value=""></ion-input>
+          </ion-item>
+        </div>
+
+        <div class="prfl-detl">
+            <ion-grid>
+              <ion-row>
+              <ion-col col-1>
+                <img class="dtl" src="assets/imgs/charge.png">
+              </ion-col>
+              <ion-col col-11>
+                  <label>Availability :</label>
+              </ion-col>
+             <!-- </ion-row>
+            </ion-grid> -->
+            <ion-item>
+                
+                <ion-input type="text" value=""></ion-input>
+            </ion-item></ion-row></ion-grid>
+          </div>
+     </ion-col>
+   </ion-row>
+ </ion-grid></ion-list>
+
+ <div class="prfl-detl">
+ <ion-grid >
+   <ion-row>
+     <ion-col col-12>
+       <h1>Gallery:</h1>
+       <ion-slides>
+         <ion-slide>
+           <ion-grid>
+             <ion-row>
+               <ion-col col-4>
+                  <div class="acheivmnt">
+                      <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                    </div>
+               </ion-col>
+               <ion-col col-4>
+                  <div class="acheivmnt">
+                      <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                    </div>
+               </ion-col>
+               <ion-col col-4>
+                  <div class="acheivmnt">
+                      <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                    </div>
+               </ion-col>
+             </ion-row>
+           </ion-grid></ion-slide>
+
+        <ion-slide>
+            <ion-grid>
+                <ion-row>
+                  <ion-col col-4>
+                      <div class="acheivmnt">
+                          <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                        </div>
+                  </ion-col>
+                  <ion-col col-4>
+                      <div class="acheivmnt">
+                          <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                        </div>
+                  </ion-col>
+                  <ion-col col-4>
+                      <div class="acheivmnt">
+                          <div class="icn-pls"> <ion-icon class="add" name="add-circle"></ion-icon></div>
+                        </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+        </ion-slide>
+       </ion-slides>
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+ <ion-grid>
+   <ion-row>
+
+     <ion-col col-12>     <div class="updtbtn"><button ion-button full color="blue" class="btnblu" (click)="signin()">Update</button></div></ion-col>
+   </ion-row>
+ </ion-grid>
+ </div>
+</ion-content>
